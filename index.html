@@ -24,6 +24,7 @@
         <p>Зв'язатись з нами</p>
       </div>
     </div>
+    <div class="banner-img">
     <div class="banner">
       <div class="banner-left-side">
         <h1>
@@ -47,11 +48,12 @@
       </div>
 
       <div class="banner-right-side">
-        <img class="banner-photo" src="/img/happy-family.jpg" alt="banner" />
+        <!-- <img class="banner-photo" src="/img/happy-family.jpg" alt="banner" /> -->
       </div>
     </div>
+  </div>
     <hr />
-    <div class="green-circle"></div>
+    
     <div class="togle-section">
       <div class="who-are">Хто ми</div>
       <div class="aditional-text">Додатковий текст</div>
@@ -166,5 +168,75 @@
         </form>
       </div>
     </div>
+    <div class="calculator">
+      <div class="calculator-text"><h1>Калькулятор <br> інвестицій</h1><p>Підберіть суму інвестицій за рік, варіант інвестування <br> та розрахуйте свій прогнозований дохід.</p></div>
+      <div class="calculator-togle"><div>Страхові компанії життя</div><div>Фондові біржі</div><div>Криптовалюта</div></div>
+      
+      <div class="calculator-block">
+      <div class="calculator-left"><div class="calcBotLeft">
+        <h5>Сума інвестицій</h5>
+        <div class="range">
+          <div class="sliderValue">
+            <span class="calculatedValue">20000</span>
+          </div>
+          <div class="field">
+            <div class="value left">20000</div>
+            <input
+              class="topSlide"
+              type="range"
+              min="20000"
+              max="100000"
+              value="35000"
+              steps="5000"
+            />
+            <div class="value right">100000</div>
+          </div>
+        </div>
+        <h5>Термін інвестування</h5>
+        <div class="range">
+          <div class="sliderValue">
+            <span class="calculatedTime">10</span>
+          </div>
+          <div class="field">
+            <div class="value left">5</div>
+            <input
+              class="botSlide"
+              type="range"
+              min="1"
+              max="40"
+              value="10"
+              steps="1"
+            />
+            <div class="value right">40</div>
+          </div>
+        </div>
+      </div></div>
+      <div class="calculator-right">
+      <div class="block">
+      <div class="part empty">0</div>
+      <div class="part contribution">1</div>
+      <p>Ваш внесок</p>
+    </div>
+    <div class="block">
+      
+      <div class="part income">2</div>
+      <div class="part contribution">3</div>
+      <p>Ваш дохід</p>
+      
+    </div>
+    <div class="block">
+      <div class="part sickness">4</div>
+      <div class="part contribution">5</div>
+      <p>Виплата при <br> критичних <br> захворваннях</p>
+      </div>
+      <div class="block">
+      <div class="part critical">6</div>
+      <div class="part contribution">7</div>
+      <p>Виплата при <br> нещасному <br> випадку</p>
+    </div>
+    </div>
+    </div>
+    </div>
+    <script src="script.js"></script>
   </body>
 </html>
