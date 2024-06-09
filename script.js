@@ -28,7 +28,7 @@ inputSlider.oninput = () => {
   slideValue.classList.add("show");
   const textValue = slideValue.innerText;
   const timeInv = timeValue.innerText;
-  outputBlock.map((el) => (el.innerText = slideValue.innerText));
+  outputBlock.map((el) => (el.innerText = slideValue.innerText * timeInv));
   incomeEl.innerText = calculate(textValue, timeInv, 12);
   sickEl.innerText = calculateSick(slideValue, timeValue);
   criticalEl.innerText = calculateCritical(slideValue, timeValue);
@@ -39,6 +39,7 @@ timeSlider.oninput = () => {
   timeValue.style.left = (value * 5) / 2 + "%";
   const textValue = slideValue.innerText;
   const timeInv = timeValue.innerText;
+  outputBlock.map((el) => (el.innerText = slideValue.innerText * timeInv));
   incomeEl.innerText = calculate(textValue, timeInv, 12);
   sickEl.innerText = calculateSick(slideValue, timeValue);
   criticalEl.innerText = calculateCritical(slideValue, timeValue);
